@@ -82,6 +82,7 @@ $(document).ready(function () {
     });
 
     // Buscador en vivo
+    // Buscador en vivo por Bárbara Rodas
     $("#buscador").keyup(function () {
         let texto = $(this).val().toLowerCase();
 
