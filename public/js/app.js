@@ -69,6 +69,7 @@ $(document).ready(function () {
 
 
     // Filtro por categoría
+    // Filtro por categoría por Bárbara Rodas
     $("#filtroCategoria").change(function () {
         let cat = $(this).val();
 
