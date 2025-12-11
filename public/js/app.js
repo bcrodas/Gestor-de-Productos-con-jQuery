@@ -13,8 +13,8 @@ $(document).ready(function () {
 
         setTimeout(() => $("#alerta").addClass("d-none"), 3000);
     }
-
-    // Renderizar tabla
+ 
+    // Renderizar tabla   hecho por kevin shagñay
     function renderTabla(lista) {
     $("#tablaProductos").empty();
 
