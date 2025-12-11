@@ -1,0 +1,45 @@
+/* Estilo general de la tarjeta */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 20px;
+    background: linear-gradient(90deg, #e4fff0, #e6f0ff);
+}
+
+/* Resultado con fondo gris suave */
+#resultado {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px;
+    min-height: 40px;
+}
+
+/* Inputs con bordes redondeados */
+input.form-control {
+    border-radius: 8px;
+}
+
+/* Encabezado más bonito */
+.card-header h4 {
+    margin: 0;
+    font-weight: bold;
+    color: #51585a;
+}
+
+/* Espacio entre botones */
+.d-grid .btn {
+    border-radius: 10px;
+}
+.btn-limpiar {
+    background-color: #6c757d;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-limpiar:hover {
+    background-color: #5a6268;
+    transform: scale(1.03);
+}

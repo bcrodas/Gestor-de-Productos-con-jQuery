@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Productos</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="public/vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="public/css/estilos.css">
+
+    <!-- jQuery -->
+    <script src="public/vendor/jquery/jquery-3.7.1.min.js"></script>
+</head>
+
+<body class="bg-light">
+
+<div class="container py-4">
+    <h1 class="mb-4 text-center">Gestor de Productos - GRUPO1 </h1>
+
+    <!-- ALERTA -->
+    <div id="alerta" class="alert d-none"></div>
+
+    <!-- FORMULARIO DE REGISTRO -->
+    <div class="card mb-4">
+        <div class="card-header">Registrar producto</div>
+        <div class="card-body">
+            <form id="formProducto">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label class="form-label">Nombre</label>
+                        <input type="text" id="nombre" class="form-control">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="form-label">Precio</label>
+                        <input type="number" id="precio" class="form-control">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="form-label">Categoría</label>
+                        <select id="categoria" class="form-select">
+                            <option value="">Seleccione</option>
+                            <option value="Abarrotes">Abarrotes</option>
+                            <option value="Bebidas">Bebidas</option>
+                            <option value="Limpieza">Limpieza</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="button" id="btnAgregar" class="btn btn-primary mt-3">
+                    Agregar producto
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FILTROS -->
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <label class="form-label">Filtrar por categoría</label>
+            <select id="filtroCategoria" class="form-select">
+                <option value="Todos">Todos</option>
+                <option value="Abarrotes">Abarrotes</option>
+                <option value="Bebidas">Bebidas</option>
+                <option value="Limpieza">Limpieza</option>
+            </select>
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label">Buscar por nombre</label>
+            <input type="text" id="buscador" class="form-control" placeholder="Escriba para buscar...">
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label">Ordenar por precio</label>
+            <select id="ordenPrecio" class="form-select">
+                <option value="">Seleccione</option>
+                <option value="asc">Precio Ascendente</option>
+                <option value="desc">Precio Descendente</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- TABLA DE PRODUCTOS -->
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+        <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Categoría</th>
+        <th>Acciones</th>
+        </tr>
+        </thead>
+
+        <tbody id="tablaProductos"></tbody>
+    </table>
+
+    <!-- BOTÓN ESTADÍSTICAS -->
+    <button class="btn btn-success" id="btnStats">Ver estadísticas</button>
+
+    <!-- CARD DE ESTADÍSTICAS -->
+    <div class="card mt-3 d-none" id="cardStats">
+        <div class="card-header">Estadísticas</div>
+        <div class="card-body">
+            <p><strong>Total de productos:</strong> <span id="statTotal"></span></p>
+            <p><strong>Precio promedio:</strong> <span id="statPromedio"></span></p>
+            <p><strong>Producto más caro:</strong> <span id="statCaro"></span></p>
+            <p><strong>Producto más barato:</strong> <span id="statBarato"></span></p>
+        </div>
+    </div>
+</div>
+
+<!-- JS -->
+<script src="public/vendor/jquery/jquery-3.7.1.min.js"></script>
+<script src="public/vendor/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="public/js/app.js"></script>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    © Grupo 1 - Todos los Derechos Reservados 
+</footer>
+
+</body>
+</html>
