@@ -107,6 +107,7 @@ $(document).ready(function () {
         renderTabla(productos);
     });
 
+    // Marcos Bajaña
     // Estadísticas
     $("#btnStats").click(function () {
         if (productos.length === 0) {
