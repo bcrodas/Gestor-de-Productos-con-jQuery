@@ -93,6 +93,7 @@ $(document).ready(function () {
         renderTabla(filtrados);
     });
 
+    // Marco Bajaña
     // Ordenamiento
     $("#ordenPrecio").change(function () {
         let tipo = $(this).val();
