@@ -138,7 +138,7 @@ $(document).ready(function () {
         $("#cardStats").removeClass("d-none");
     });
 
-    // Evento eliminar producto 
+    // Botón de "Eliminar Producto" por Isaac Mera 
         $(document).on("click", ".btnEliminar", function () {
             let idEliminar = $(this).data("id");
 
