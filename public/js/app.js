@@ -159,7 +159,7 @@ $(document).ready(function () {
                 // Actualizar tabla
                 renderTabla(productos);
 
-                // Si el card de estadísticas está visible, recalcular estadísticas
+                // Si el Card de Estadísticas está Visible (Recalcula las Estadísticas)
                 if (!$("#cardStats").hasClass("d-none")) {
                     $("#btnStats").click();
                 }
