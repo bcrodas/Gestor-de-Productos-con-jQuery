@@ -142,7 +142,7 @@ $(document).ready(function () {
         $(document).on("click", ".btnEliminar", function () {
             let idEliminar = $(this).data("id");
 
-            // Confirmación simple
+            // Confirmación
             let seguro = confirm("¿Estás seguro de eliminar este producto?");
             if (!seguro) return; // Si el usuario presiona "Cancelar", no hacer nada
 
