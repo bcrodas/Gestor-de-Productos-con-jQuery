@@ -142,18 +142,18 @@ $(document).ready(function () {
         $(document).on("click", ".btnEliminar", function () {
             let idEliminar = $(this).data("id");
 
-            // Confirmación
+            // Confirmación (Boton Eliminar)
             let seguro = confirm("¿Estás seguro de eliminar este producto?");
             if (!seguro) return; // Si el usuario presiona "Cancelar", no hacer nada
 
-            // Buscar índice del producto
+            // Buscar índice del producto (Boton Eliminar)
             let indice = productos.findIndex(p => p.id === idEliminar);
 
             if (indice !== -1) {
-                // Eliminar producto del array
+                // Eliminar producto del Array (Boton Eliminar)
                 productos.splice(indice, 1);
 
-                // Mostrar alerta de eliminación
+                // Mostrar alerta de eliminación (Boton Eliminar)
                 mostrarAlerta("danger", "Producto eliminado");
 
                 // Actualizar tabla
